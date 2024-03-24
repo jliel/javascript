@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkboxes checked</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Which platform do you prefer for gaming?:</h1>
+    <div class="radios">
+        <input type="radio" name="platform" id="androidCB" value="Android">
+        <label for="androidCB">Android</label><br>
+        <input type="radio" name="platform" id="iosCB" value="IOS">
+        <label for="iosCB">IOS</label><br>
+        <input type="radio" name="platform" id="emulatedCB", value="EMulated">
+        <label for="emulatedCB">Emulated on PC</label><br>
+    </div>
+    
+
+    <button type="submit" id="submit" class="btn">Submit</button>
+    
+    <span id="preferences"></span>
+    
+    <div class="radios">
+        <input type="checkbox" name="platformcb" id="androidCB" value="Android">
+        <label for="androidCB">Android</label><br>
+        <input type="checkbox" name="platformcb" id="iosCB" value="IOS">
+        <label for="iosCB">IOS</label><br>
+        <input type="checkbox" name="platformcb" id="win10" value="Win10">
+        <label for="win10">Win10</label><br>
+        <input type="checkbox" name="platformcb" id="emulatedCB", value="EMulated">
+        <label for="emulatedCB">Emulated on PC</label><br>
+    </div>
+    <button type="submit" id="submit2" class="btn">Submit</button>
+    <span id="preferencesResult"></span>
+    
+    <script src="checkboxes.js"></script>
+</body>
+
+</html>
