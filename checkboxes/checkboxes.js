@@ -27,15 +27,16 @@ btn2.onclick = (e) => {
     const checks = document.getElementsByName("platformcb");
     for(check of checks) {
         if(check.checked) {
-            if(added > 0 && added < checks.length-1) {
+            if(added > 0 && added < checks.length) {
                 printTxt += ", ";
-            }
-            if(added > 0 && added === checks.length-1) {
-                printTxt += " and ";
             }
             printTxt += check.value;
             added++;
         }
+    }
+    if(added > 1) {
+        let lastComa = printTxt.lastIndexOf(",");
+        printTxt = printTxt.slice(0, lastComa) + " and " + printTxt.slice(lastComa+1, printTxt.length);
     }
     result2.textContent = printTxt;
 }
