@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Icon Bar</title>
+</head>
+
+<body>
+    <header>
+        <nav class="top">
+            <ul>
+                <li>
+                    <a href="#"><i class="fa-solid fa-house"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-sharp fa-regular fa-globe"></i></a>
+                </li>
+                <li>
+                <a href="#"><i class="fa-solid fa-trash"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <nav class="aside">
+            <ul>
+                <li>
+                    <a href="#" onclick="activeButton(this)"><i class="fa-solid fa-house"></i></a>
+                </li>
+                <li>
+                    <a href="#"onclick="activeButton(this)"><i class="fa-solid fa-magnifying-glass" ></i></a>
+                </li>
+                <li>
+                    <a href="#"onclick="activeButton(this)"><i class="fa-solid fa-envelope"></i></a>
+                </li>
+                <li>
+                    <a href="#"onclick="activeButton(this)"><i class="fa-sharp fa-regular fa-globe" ></i></a>
+                </li>
+                <li>
+                <a href="#"onclick="activeButton(this)"><i class="fa-solid fa-trash"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+    </aside>
+
+    <script>
+        function activeButton(button) {
+            var active = document.getElementsByClassName('active');
+            console.log(active);
+            if(active.length>0) {
+                active[0].classList.remove('active');
+            }
+            button.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

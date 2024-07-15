@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0C0C0C;
+    height: 100vh;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+main h1 {
+    font-size: 2rem;
+    color: whitesmoke;
+    margin: 3rem 0;
+}
+
+.row {
+    display: flex;
+    gap: 1rem;
+}
+
+.row .col {
+    width: 50%;
+}
+
+.accordion {
+    cursor: pointer;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    width: 100%;
+    background-color: #116D6E;
+    padding: 20px;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    text-align: left;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition-delay: .2s;
+    transition: border-radius .5s, background-color .2s;
+}
+
+section:nth-child(2) button.accordion {
+    border-radius: 0;
+}
+
+section:last-child button.accordion {
+    border-radius: 0 0 10px 10px;
+}
+
+section:last-child button.active {
+    border-bottom: 0;
+    border-radius: 0;
+}
+.active, .accordion:hover {
+    background-color: #5C8374;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: whitesmoke;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s ease-out;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Acordeon</title>
+</head>
+
+<body>
+    <main>
+        <h1>Animated Accordion</h1>
+        <div class="row">
+            <div class="col">
+                <section>
+                    <button class="accordion">Section 1</button>
+                    <article class="panel">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere similique voluptate quod nobis, odio
+                            minima fugit perspiciatis ipsum maxime! Voluptate, optio quasi quis recusandae aspernatur reiciendis
+                            sapiente esse cum. At.
+                        </p>
+                    </article>
+                </section>
+                <section>
+                    <button class="accordion">Section 1</button>
+                    <article class="panel">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere similique voluptate quod nobis, odio
+                            minima fugit perspiciatis ipsum maxime! Voluptate, optio quasi quis recusandae aspernatur reiciendis
+                            sapiente esse cum. At.
+                        </p>
+                    </article>
+                </section>
+                <section>
+                    <button class="accordion">Section 1</button>
+                    <article class="panel">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere similique voluptate quod nobis, odio
+                            minima fugit perspiciatis ipsum maxime! Voluptate, optio quasi quis recusandae aspernatur reiciendis
+                            sapiente esse cum. At.
+                        </p>
+                    </article>
+                </section>
+            </div>
+            <div class="col">
+                <section>
+                    <button class="accordion">Section 1</button>
+                    <article class="panel">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere similique voluptate quod nobis, odio
+                            minima fugit perspiciatis ipsum maxime! Voluptate, optio quasi quis recusandae aspernatur reiciendis
+                            sapiente esse cum. At.
+                        </p>
+                    </article>
+                </section>
+                <section>
+                    <button class="accordion">Section 1</button>
+                    <article class="panel">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere similique voluptate quod nobis, odio
+                            minima fugit perspiciatis ipsum maxime! Voluptate, optio quasi quis recusandae aspernatur reiciendis
+                            sapiente esse cum. At.
+                        </p>
+                    </article>
+                </section>
+                <section>
+                    <button class="accordion">Section 1</button>
+                    <article class="panel">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere similique voluptate quod nobis, odio
+                            minima fugit perspiciatis ipsum maxime! Voluptate, optio quasi quis recusandae aspernatur reiciendis
+                            sapiente esse cum. At.
+                        </p>
+                    </article>
+                </section>
+            </div>
+        </div>
+        
+    </main>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        // console.log(buttons);
+        var i;
+        for(i=0; i<acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if(panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Weather</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navigation">
+        <ul class="nav-left">
+          <li>
+            <button class="btn-icon"><i class="fa-solid fa-shapes"></i></button>
+          </li>
+          <li>
+            <button class="btn-icon"><i class="fa-solid fa-hand"></i></button>
+          </li>
+          <li>
+            <div class="location-container">
+              <i class="fa-solid fa-location-dot"></i>
+              <input type="text" placeholder="Mexico, Zacatecas" />
+            </div>
+          </li>
+        </ul>
+        <div class="nav-center">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search"/>
+        </div>
+        <ul class="nav-right">
+            <div>
+                <li><i class="fa-solid fa-moon"></i></li>
+                <li><i class="fa-regular fa-sun"></i></li>
+            </div>
+            <img src="./img/profile.png" class="nav-profile" alt="profile image">
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+        <div class="wrapper">
+            <div class="row">
+                <div class="col col-6">
+                    <section class="pronostico">
+                        <div class="header-pronostico">
+                            <div class="span-days">
+                                <span>Today</span>
+                                <span>Tomorrow</span>
+                                <span>Next 7 Days</span>
+                            </div>
+                            <div class="formats">
+                                <button>
+                                    Forecast
+                                </button>
+                                <button>
+                                    Humidity
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="card active-card">
+                                <div class="card-header">
+                                    <span>Monday</span>
+                                    <span class="active">11:42 PM</span>
+                                </div>
+                                <div class="card-content row active">
+                                    <div class="column column-temperature-data">
+                                        <span class="temperature">16°</span>
+                                        <div class="active">
+                                            <p>Max Heat: <span>18°</span></p>
+                                            <p>Wind: <span>18 km/h</span></p>
+                                            <p>Pressure: <span>100MB</span></p>
+                                            <p>Rain: <span>18%</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <img src="./img/ventoso.png" alt="">
+                                        <div class="active">
+                                            <p>sunrise: <span>6:00 AM</span></p>
+                                            <p>Sunset: <span>8:00 PM</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card active-card">
+                                <div class="card-header">
+                                    <span>Monday</span>
+                                    <span class="active">11:42 PM</span>
+                                </div>
+                                <div class="card-content row active">
+                                    <div class="column column-temperature-data">
+                                        <span class="temperature">16°</span>
+                                        <div class="active">
+                                            <p>Max Heat: <span>18°</span></p>
+                                            <p>Wind: <span>18 km/h</span></p>
+                                            <p>Pressure: <span>100MB</span></p>
+                                            <p>Rain: <span>18%</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <img src="./img/ventoso.png" alt="">
+                                        <div class="active">
+                                            <p>sunrise: <span>6:00 AM</span></p>
+                                            <p>Sunset: <span>8:00 PM</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                </div>
+                <div class="col col-2">
+                    <p>pito</p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </main>
+  </body>
+</html>

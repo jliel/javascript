@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+/**
+    nav bar styles
+*/
+nav {
+    padding: 1.5rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    top: 20px;
+    width: 250px;
+    border-right: 1px solid rgb(128, 128, 128, 0.5);
+}
+
+.logo-img {
+    font-family: cursive;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.logo {
+    margin-bottom: 2rem;
+    
+}
+
+.nav-icon {
+    width: 24px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+}
+
+nav div:nth-child(2) {
+    flex-grow: 1;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.8rem 1rem 0.8rem 0.4rem;
+}
+
+.nav-item:active {
+    font-weight: 700;
+}
+
+.nav-item:hover {
+    border-radius: 10px;
+    background-color: rgba(121, 118, 118, 0.1);
+}
+
+main {
+    width: 80%;
+    flex-grow: 1;
+    margin-left: 300px;
+    margin-right: 10rem;
+
+}
+
+.container {
+    margin: 3rem 6rem;
+}
+
+.histories {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.history-img {
+    width: 64px;
+    border: 3px solid #f00;
+    border-radius: 50%;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+}
+
+/**
+reel header
+*/
+
+.reels {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.reel-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+.reel-profile-img {
+    width: 32px;
+    border-radius: 50%;
+}
+
+.reel-user-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.publish-time {
+    font-size: 0.7rem;
+    color: rgb(128, 128, 128, 0.8);
+}
+
+.reel-sound-name {
+    font-size: 0.9rem;
+    color: rgb(128, 128, 128, 0.9);
+
+}
+
+.reel-img-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    background-color: #000;
+    border-radius: 10px;
+    justify-content: center;
+    background-size: cover;
+}
+
+.reel-commands > div{
+    display: flex;
+    gap: 0.3rem;
+}
+
+.reel-commands {
+    display: flex;
+    justify-content: space-between;
+}
+
+.command-icon {
+    width: 24px;
+}
+
+/**
+    aside styles
+    */
+aside {
+    max-width: 350px;
+    padding: 3rem 2rem;
+    margin-right: 8rem;
+}
+
+.aside-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.aside-profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+    gap: 1rem;
+}
+
+.black-link {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.blue-link {
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.profile-icon {
+    width: 50px;
+    border: 1px solid rgba(121, 118, 118, 0.7);
+    border-radius: 50%;
+}
+
+.suggestion-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.suggestions-title {
+    font-size: 0.9rem;
+    color: rgb(155, 151, 151);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.suggestions-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.suggestions-options> div {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.suggestions-options div a[class="blue-link"]{
+    line-height:40px;
+}
+
+.suggestions-options >div> div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.suggestion-info {
+    font-size: 0.8rem;
+    color: rgb(155, 151, 151);
+}
+
